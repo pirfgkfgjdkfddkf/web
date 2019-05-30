@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="kr">
+  <head>
+    <link href="https://fonts.googleapis.com/css?family=Noto+Sans" rel="stylesheet">
+    <meta charset="utf-8">
+    <title></title>
+    <style>
+    body{margin: 0;}
+      #scene{
+      height: 800px;
+      background-size: cover;
+      background-attachment: fixed;
+    }
+      .one{background-image: url(images_04.png);}
+      .two{background-image: url(images_05.png);}
+      .three{background-image: url(images_06.png);}
+
+    .tit{
+      position: relative;
+      left: 50%;
+      top: 50%;
+      transform: translateX(-50%) translateY(-50%);
+      text-align: center;
+    }
+  /*---nav 스타일 지정---*/
+.wrap{border: 0px solid red;
+height: 100px;
+width: 100%;
+position:fixed;
+background-color: white;
+z-index: 10;}
+.logo{border: 0px solid green;
+display: inline-block;
+height: 100px;
+margin-left: : 240px;
+}
+.nav{border: 0px solid blue;
+position: fixed;
+right: 50px;
+top: 35px;
+display: inline-block;
+margin-right: 240px;}
+
+/*---타입 스타일 지정---*/
+#type{
+  font-family: 'Noto Sans', sans-serif;
+ font-size: 1.1rem;
+ font-weight: 600;
+}
+.space{
+  margin-left: 4rem;
+}
+a, a:link :visited :active{
+  text-decoration: none;
+  color: gray;
+}
+a:hover{color: red;
+}
+/*---footer---*/
+footer{
+  height: 100px;
+  background-color: rgba(0,0,0,0.2);}
+
+  .footer{
+    position: relative;
+    left: 50%;
+    top: 50%;
+    transform: translateX(-50%) translateY(-50%);
+    text-align: center;
+    font-family: 'noto Sans KR', sans-serif;
+    font-size: 0.9rem;
+    font-weight: 100;
+    color: gray;
+
+  }
+
+
+}
+</style>
+</head>
+
+  <body>
+    <nav class="wrap">
+      <div class="logo">
+        <a href="index.html"><img src="logo.png">
+      </div>
+      <div id="type"class="nav">
+        <a href="p01.html">EF-S 35mm F2.8 Macro IS STM</a><span class="space"></span>
+        <a href="p02.html">EF-S 18-55mm F4-5.6 IS STM</a><span class="space"></span>
+        <a href="p03.html">EF 70-300mm F4.5.6 IS II USM</a>
+      </div>
+
+    </nav>
+    <section id="scene" class="one">
+      <div class="tit"><a href="p01.html"><img src="t01.png"></a></div>
+    </section>
+    <section id="scene" class="two">
+      <div class="tit"><a href="p02.html"><img src="t02.png"></a></div>
+    </section>
+    <section id="scene" class="three">
+      <div class="tit"><a href="p03.html"><img src="t03.png"></a></div>
+    </section>
+
+      <footer>
+        <div class="footer">
+          Copyright 2019 Canon Korea. All Right Reserved.
+          </div>
+      </footer>
+
+
+
+  </body>
+</html>
